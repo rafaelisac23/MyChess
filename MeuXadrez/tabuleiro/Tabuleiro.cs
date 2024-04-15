@@ -18,13 +18,19 @@ namespace tabuleiro
         {
             Linhas = linhas;
             Colunas = colunas;
-            pecas= new Peca[linhas,Colunas];
+            pecas= new Peca[linhas,colunas];
 
         }
         public Peca peca(int linha,int coluna)
         {
             return pecas[linha,coluna];
 
+        }
+
+        public void ColocarPeca(Peca p,Posicao pos)
+        {
+            pecas[pos.Linha, pos.Coluna] = p;
+            p.Posicao = pos;
         }
     }
 }
