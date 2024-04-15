@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MeuXadrez.tabuleiro;
+using System;
 using tabuleiro;
 namespace MeuXadrez
 {
@@ -6,11 +7,7 @@ namespace MeuXadrez
     {
         static void Main(string[] args)
         {
-            Posicao P;
-
-            P = new(3, 4);
-
-            Console.WriteLine("posi: "+P);
+          Tabuleiro tab = new Tabuleiro(8,8);
 
             Console.ReadLine();
         }
