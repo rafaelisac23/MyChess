@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using tabuleiro;
 
-namespace MeuXadrez.tabuleiro
+namespace tabuleiro
 {
     internal class Peca
     {

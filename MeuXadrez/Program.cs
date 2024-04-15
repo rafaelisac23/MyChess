@@ -1,6 +1,9 @@
-﻿using MeuXadrez.tabuleiro;
+﻿
 using System;
 using tabuleiro;
+
+
+
 namespace MeuXadrez
 {
     internal class Program
@@ -9,7 +12,11 @@ namespace MeuXadrez
         {
           Tabuleiro tab = new Tabuleiro(8,8);
 
+            Tela.imprimirTabuleiro(tab);
+
             Console.ReadLine();
+
+            
         }
     }
 }
