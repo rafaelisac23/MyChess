@@ -30,6 +30,8 @@ namespace MeuXadrez
             {
                 Console.WriteLine(e.Message);
             }
+
+
             Console.ReadLine();
 
 
