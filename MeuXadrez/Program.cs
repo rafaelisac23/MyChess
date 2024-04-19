@@ -26,6 +26,15 @@ namespace MeuXadrez
                     Console.WriteLine();
                     Console.Write("Origem: ");
                     Posicao origem = Tela.lerPosicaoXadrez().ToPosicao();
+
+                    //imprimindo denovo com as posições possiveis marcadas
+
+                    bool[,] posicoesPossiveis=partida.Tab.peca(origem).movimentosPossiveis();
+                    Console.Clear();
+                    Tela.imprimirTabuleiro(partida.Tab,posicoesPossiveis);
+
+                    // fim
+                    Console.WriteLine();
                     Console.Write("Destino: ");
                     Posicao destino = Tela.lerPosicaoXadrez().ToPosicao();
 

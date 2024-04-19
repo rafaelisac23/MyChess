@@ -7,7 +7,7 @@ using tabuleiro;
 
 namespace tabuleiro
 {
-    internal class Peca
+    abstract internal class Peca
     {
         public Posicao Posicao { get; set; }
 
@@ -22,10 +22,14 @@ namespace tabuleiro
             QteMovimentos = 0;
             Tab = tab;
         }
-
         public void IncrementarQteMovimentos()
         {
             QteMovimentos++;
         }
+
+        public abstract bool[,] movimentosPossiveis();
+        
+
+       
     }
 }
