@@ -20,6 +20,11 @@ namespace MeuXadrez
             Console.WriteLine();
             Console.WriteLine("Turno : " + partida.Turno);
             Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
+            if (partida.xeque)
+            {
+                Console.WriteLine("XEQUE!");
+            }
+            
         }
 
 
