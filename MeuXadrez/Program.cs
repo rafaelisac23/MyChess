@@ -51,7 +51,8 @@ namespace MeuXadrez
                     }
                 }
 
-                Tela.imprimirTabuleiro(partida.Tab);
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
 
             catch (TabuleiroException e)
