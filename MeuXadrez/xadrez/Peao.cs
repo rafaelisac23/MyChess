@@ -43,17 +43,17 @@ namespace xadrez
                     mat[pos.Linha,pos.Coluna] = true;
                 }
                 pos.definirValores(Posicao.Linha - 2, Posicao.Coluna);
-                if (Tab.posicaoValida(pos) && livre(pos))
+                if (Tab.posicaoValida(pos) && livre(pos) && QteMovimentos ==0)
                 {
                     mat[pos.Linha, pos.Coluna] = true;
                 }
                 pos.definirValores(Posicao.Linha - 1, Posicao.Coluna-1);
-                if (Tab.posicaoValida(pos) && livre(pos))
+                if (Tab.posicaoValida(pos) && existeInimigo(pos))
                 {
                     mat[pos.Linha, pos.Coluna] = true;
                 }
                 pos.definirValores(Posicao.Linha - 1, Posicao.Coluna+1);
-                if (Tab.posicaoValida(pos) && livre(pos))
+                if (Tab.posicaoValida(pos) && existeInimigo(pos))
                 {
                     mat[pos.Linha, pos.Coluna] = true;
                 }
@@ -66,17 +66,17 @@ namespace xadrez
                     mat[pos.Linha, pos.Coluna] = true;
                 }
                 pos.definirValores(Posicao.Linha + 2, Posicao.Coluna);
-                if (Tab.posicaoValida(pos) && livre(pos))
+                if (Tab.posicaoValida(pos) && livre(pos) && QteMovimentos == 0)
                 {
                     mat[pos.Linha, pos.Coluna] = true;
                 }
                 pos.definirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
-                if (Tab.posicaoValida(pos) && livre(pos))
+                if (Tab.posicaoValida(pos) && existeInimigo(pos))
                 {
                     mat[pos.Linha, pos.Coluna] = true;
                 }
                 pos.definirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
-                if (Tab.posicaoValida(pos) && livre(pos))
+                if (Tab.posicaoValida(pos) && existeInimigo(pos))
                 {
                     mat[pos.Linha, pos.Coluna] = true;
                 }
